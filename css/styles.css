@@ -1,0 +1,2020 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 h2 h3 h4 h5 h6 p {
+  margin-bottom: 16px;
+}
+
+.navHolder {
+  position: fixed;
+  left: 10px;
+  z-index: 10;
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: #000;
+  height: 3px;
+  border-radius: 5px;
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: #000;
+  height: 3px;
+  border-radius: 5px;
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: #000;
+  height: 3px;
+  border-radius: 5px;
+}
+.navHolder .bars {
+  display: none;
+}
+.navHolder .bars.active .bar:nth-child(1) {
+  opacity: 0;
+}
+.navHolder .bars.active .bar:nth-child(2) {
+  -webkit-transform: translateY(2px) rotate(45deg);
+          transform: translateY(2px) rotate(45deg);
+}
+.navHolder .bars.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: #000;
+  height: 3px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.navHolder .logo {
+  font-size: 25px;
+  color: bisque;
+  background-color: darkcyan;
+  margin-left: -10px;
+  font-family: Cabin-Italic;
+  border: 2px solid bisque;
+  width: 150px;
+  height: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navHolder .desk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+}
+.navHolder .mobile {
+  display: none;
+}
+.navHolder .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: darkcyan;
+  height: 50px;
+  width: 100vw;
+  margin-left: -10px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: height 0.4s, opacity 0.2s ease-in;
+  transition: height 0.4s, opacity 0.2s ease-in;
+  font-family: Cabin-Italic;
+  font-size: 25px;
+}
+.navHolder .links .linkname {
+  text-decoration: none;
+  color: bisque;
+}
+.navHolder .links.active {
+  height: 100vh;
+  opacity: 1;
+}
+@font-face {
+  font-family: Cabin-Italic;
+  src: url(../fonts/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@media screen and (max-width: 960px) {
+  .navHolder .bars {
+    display: block;
+  }
+  .navHolder .links {
+    height: 0;
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navHolder .links .linkname {
+    text-decoration: none;
+    color: bisque;
+  }
+}
+@media screen and (max-width: 960px) {
+  .navHolder .bars {
+    display: block;
+  }
+  .navHolder .links {
+    height: 0;
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navHolder .links .linkname {
+    text-decoration: none;
+    color: bisque;
+  }
+}
+@media screen and (max-width: 960px) {
+  .desk {
+    display: none !important;
+  }
+  .mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+.footerbox {
+  height: 100px;
+  width: 100%;
+  background-color: darkcyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.footerbox .logo-below {
+  width: 150px;
+  height: 43px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid bisque;
+  font-size: 20px;
+}
+.footerbox .copyright {
+  color: bisque;
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footerbox .group-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.footerbox .group-social-media .social-media-icons1 {
+  color: bisque;
+  padding: 12px;
+}
+.footerbox .group-social-media .social-media-icons2 {
+  color: bisque;
+  padding: 12px;
+}
+.footerbox .group-social-media .social-media-icons3 {
+  color: bisque;
+  padding: 12px;
+}
+
+@media screen and (max-width: 960px) {
+  .footerbox {
+    max-width: 960px;
+  }
+}
+.shoead {
+  padding-top: 50px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(90, 90, 90, 0.5)), to(rgba(90, 90, 90, 0.5))), url(../images/shoead.jpg);
+  background-image: linear-gradient(to right, rgba(90, 90, 90, 0.5), rgba(90, 90, 90, 0.5)), url(../images/shoead.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.shoead .callout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shoead .callout .quote {
+  padding-left: 230px;
+  width: 95%;
+  margin-top: 110px;
+  font-size: 75px;
+  font-family: Cabin-Italic;
+  color: bisque;
+}
+@font-face {
+  font-family: Cabin-Italic;
+  src: url(../fonts/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@media screen and (max-width: 960px) {
+  .shoead .callout .quote {
+    font-size: 60px;
+    margin-left: -200px;
+  }
+}
+.divide {
+  color: darkcyan;
+  height: 30px;
+  width: 100%;
+}
+
+.titleofsectionhome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  width: 100%;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: darkcyan;
+  color: bisque;
+}
+
+.containershoesimages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+.containershoesimages .shoeone {
+  background-image: url(../images/shoeone.jpg);
+  width: 490px;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.containershoesimages .shoeone .overlay {
+  width: 490px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.68);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.containershoesimages .shoeone .overlay .textgroup {
+  margin-top: 210px;
+  margin-right: 10px;
+}
+.containershoesimages .shoeone .overlay .overtext {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Cabin-Regular;
+  font-size: 30px;
+}
+.containershoesimages .shoeone .overlay .overtext2 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+.containershoesimages .shoetwo {
+  background-image: url(../images/shoetwo.jpg);
+  width: 490px;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.containershoesimages .shoetwo .overlay {
+  width: 490px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.68);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.containershoesimages .shoetwo .overlay .textgroup {
+  margin-top: 210px;
+  margin-right: 10px;
+}
+.containershoesimages .shoetwo .overlay .overtext {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Cabin-Regular;
+  font-size: 30px;
+}
+.containershoesimages .shoetwo .overlay .overtext2 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+.containershoesimages .shoethree {
+  background-image: url(../images/shoethree.jpg);
+  width: 490px;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.containershoesimages .shoethree .overlay {
+  width: 490px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.68);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.containershoesimages .shoethree .overlay .textgroup {
+  margin-top: 210px;
+  margin-right: 10px;
+}
+.containershoesimages .shoethree .overlay .overtext {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Cabin-Regular;
+  font-size: 30px;
+}
+@font-face {
+  font-family: Cabin-Regular;
+  src: url(../fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
+}
+.containershoesimages .shoethree .overlay .overtext2 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+.containershoesimages .shoeone:hover > .overlay {
+  display: block;
+}
+.containershoesimages .shoetwo:hover > .overlay {
+  display: block;
+}
+.containershoesimages .shoethree:hover > .overlay {
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  .containershoesimages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 12px;
+  }
+  .containershoesimages .shoeone {
+    height: 600px;
+  }
+  .containershoesimages .shoetwo {
+    height: 600px;
+  }
+  .containershoesimages .shoethree {
+    height: 600px;
+  }
+  .containershoesimages .shoeone:hover > .overlay {
+    display: block;
+    height: 600px;
+  }
+  .containershoesimages .shoetwo:hover > .overlay {
+    display: block;
+    height: 600px;
+  }
+  .containershoesimages .shoethree:hover > .overlay {
+    display: block;
+    height: 600px;
+  }
+}
+.salecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 400px;
+  background-color: darkcyan;
+  width: 100%;
+}
+.salecontainer .left {
+  height: 380px;
+}
+.salecontainer .left .titleofpara {
+  width: 45%;
+  font-size: 30px;
+  color: brown;
+  font-family: Cabin-Regular;
+  margin-top: 40px;
+  margin-left: 10px;
+  background-color: bisque;
+}
+@font-face {
+  font-family: Cabin-Regular;
+  src: url(../fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
+}
+.salecontainer .left .subsectiondates {
+  font-size: 15px;
+  color: brown;
+  background-color: bisque;
+  width: 45%;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.salecontainer .left .paragraphsale {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 10px;
+  margin-top: 33px;
+  width: 65%;
+  color: bisque;
+}
+.salecontainer .right .redsale {
+  background-image: url(../images/Salered.jpg);
+  width: 380px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 960px) {
+  .salecontainer {
+    height: 600px;
+  }
+  .salecontainer .left {
+    height: 600px;
+  }
+  .salecontainer .right .redsale {
+    height: 540px;
+  }
+}
+.donateyourshoes {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(90, 90, 90, 0.5)), to(rgba(90, 90, 90, 0.5))), url(../images/recycleshoes.jpg);
+  background-image: linear-gradient(to right, rgba(90, 90, 90, 0.5), rgba(90, 90, 90, 0.5)), url(../images/recycleshoes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.donateyourshoes .callout2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.donateyourshoes .callout2 .donateyourshoestitle {
+  text-align: center;
+  width: 100%;
+  margin-top: 150px;
+  font-size: 90px;
+  font-family: Cabin-Regular;
+  color: bisque;
+}
+@font-face {
+  font-family: Cabin-Regular;
+  src: url(../fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
+}
+.donateyourshoes .callout2 .donateshoesinfo {
+  font-size: 25px;
+  width: 85%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  color: bisque;
+}
+.donateyourshoes .callout2 .explorebutton {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: darkcyan;
+  color: bisque;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 220px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 50px;
+  font-size: 23px;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .donateyourshoes {
+    height: 600px;
+  }
+}
+.browsecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 60px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 93%;
+  padding-top: 50px;
+  padding-left: 15%;
+  height: 320px;
+}
+
+.containerthree {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .shoespicssix {
+  margin-top: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/blackboots.jpg);
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .leftone .shoespicssix .button-view {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  display: none;
+}
+.containerthree .leftone .shoespicssix:hover .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .button-holder .button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .leftone .button-holder .buttonone {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightone {
+  width: 150px;
+  height: 200px;
+  margin-top: 70px;
+}
+.rightone .titleofpara {
+  margin-right: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.rightone .paragraphinfo {
+  margin-right: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+.button-holder .buttonone {
+  margin-left: 10px;
+}
+
+.containerfour {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicsone {
+  margin-top: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/beigehighheels.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+.containerfour .leftone .shoespicsone .button-view {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  display: none;
+}
+.containerfour .leftone .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .button-holder .button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .leftone .button-holder .buttonone {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .leftone .shoespicsone:hover .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerfour .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+@media screen and (max-width: 960px) {
+  .containerthree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerthree .leftone {
+    width: 50%;
+  }
+  .containerthree .leftone .shoespicssix .button-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerthree .leftone .button-holder {
+    width: 300px;
+  }
+  .containerthree .leftone .button-holder .buttonone {
+    width: 128px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .containerfour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerfour .leftone {
+    width: 50%;
+  }
+  .containerfour .leftone .shoespicsone .button-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerfour .leftone .button-holder {
+    width: 300px;
+  }
+  .containerfour .leftone .button-holder .buttonone {
+    width: 128px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .browsecontainer {
+    padding-top: 100px;
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.browsecontainergrouptwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 93%;
+  margin-left: 60px;
+  padding-top: 50px;
+  padding-left: 15%;
+  height: 320px;
+  margin-top: 60px;
+}
+
+.containerthree {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .shoespicsseven {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/browntallboots.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+.containerthree .leftone .button-view {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  display: none;
+}
+.containerthree .leftone .shoespicsseven:hover .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .button-holder .button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .leftone .button-holder .buttonone {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .rightonesecond {
+  width: 150px;
+  height: 200px;
+}
+.containerthree .rightonesecond .titleofpara {
+  margin-right: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerthree .rightonesecond .paragraphinfo {
+  margin-right: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+.button-holder .buttonone {
+  margin-left: 10px;
+}
+
+.containerfour {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicstwo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/brownslipons.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+.containerfour .leftone .shoespicstwo .button-view {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  display: none;
+}
+.containerfour .shoespicstwo:hover .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .rightonethree .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerfour .rightonethree .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+@media screen and (max-width: 960px) {
+  .containerthree {
+    padding-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerthree .leftone {
+    width: 50%;
+  }
+  .containerthree .leftone .shoespicsseven .button-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerthree .leftone .button-holder {
+    width: 300px;
+  }
+  .containerthree .leftone .button-holder .buttonone {
+    width: 128px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .containerfour {
+    padding-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerfour .leftone {
+    width: 50%;
+  }
+  .containerfour .leftone .shoespicstwo .button-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerfour .leftone .button-holder {
+    width: 300px;
+  }
+  .containerfour .leftone .button-holder .buttonone {
+    width: 128px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .browsecontainergrouptwo {
+    padding-top: 400px;
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.browsecontainergroupthree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 93%;
+  margin-left: 60px;
+  padding-top: 50px;
+  padding-left: 15%;
+  height: 320px;
+}
+
+.containerthree {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .shoespicseight {
+  margin-top: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/sequinhighheels.jpg);
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .leftone .shoespicseight .button-view {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  display: none;
+}
+.containerthree .leftone .shoespicseight:hover .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .button-holder .button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .leftone .button-holder .buttonone {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightone {
+  width: 150px;
+  height: 200px;
+  margin-top: 70px;
+}
+.rightone .titleofpara {
+  margin-right: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.rightone .paragraphinfo {
+  margin-right: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+.button-holder .buttonone {
+  margin-left: 10px;
+}
+
+.containerfour {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicsthree {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/speckledtennisshoes.jpg);
+  margin-bottom: 20px;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .leftone .shoespicsthree .button-view {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  display: none;
+}
+.containerfour .leftone .shoespicsthree:hover .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .button-holder .button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .leftone .button-holder .buttonone {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerfour .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+@media screen and (max-width: 960px) {
+  .containerthree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerthree .leftone {
+    width: 50%;
+  }
+  .containerthree .leftone .shoespicseight .button-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerthree .leftone .button-holder {
+    width: 300px;
+  }
+  .containerthree .leftone .button-holder .buttonone {
+    width: 128px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .containerfour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerfour .leftone {
+    width: 50%;
+  }
+  .containerfour .leftone .shoespicsthree .button-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerfour .leftone .button-holder {
+    width: 300px;
+  }
+  .containerfour .leftone .button-holder .buttonone {
+    width: 128px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .browsecontainergroupthree {
+    padding-top: 400px;
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.browsecontainergroupfour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 60px;
+  width: 93%;
+  padding-top: 50px;
+  padding-left: 15%;
+  height: 320px;
+}
+
+.containerthree {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .shoespicsnine {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/sandalsgray.jpg);
+  margin-top: 70px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .leftone .shoespicsnine .button-view {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  display: none;
+}
+.containerthree .leftone .shoespicsnine:hover .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .button-holder .button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .leftone .button-holder .buttonone {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightone {
+  width: 150px;
+  height: 200px;
+}
+.rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+.containerfour {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicsfour {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/blackslipons.jpg);
+  margin-top: 70px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .leftone .shoespicsfour .button-view {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  display: none;
+}
+.containerfour .leftone .shoespicsfour:hover .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .button-holder .button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .leftone .button-holder .buttonone {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerfour .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+@media screen and (max-width: 960px) {
+  .containerthree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerthree .leftone {
+    width: 50%;
+  }
+  .containerthree .leftone .shoespicsnine .button-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerthree .leftone .button-holder {
+    width: 300px;
+  }
+  .containerthree .leftone .button-holder .buttonone {
+    width: 128px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .containerfour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerfour .leftone {
+    width: 50%;
+  }
+  .containerfour .leftone .shoespicsfour .button-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerfour .leftone .button-holder {
+    width: 300px;
+  }
+  .containerfour .leftone .button-holder .buttonone {
+    width: 128px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .browsecontainergroupfour {
+    padding-top: 630px;
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.browsecontainergroupfive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 60px;
+  width: 93%;
+  padding-top: 50px;
+  padding-left: 15%;
+  height: 400px;
+}
+
+.containerthree {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .shoespicsten {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/graytennisshoes.jpg);
+  margin-bottom: 20px;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .leftone .shoespicsten .button-view {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  display: none;
+}
+.containerthree .leftone .shoespicsten .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .leftone .shoespicsten .button-holder .button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .leftone .shoespicsten .button-holder .buttonone {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerthree .leftone .shoespicsten:hover .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerthree .rightone {
+  width: 150px;
+  height: 200px;
+}
+.containerthree .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerthree .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+.containerfour {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicsfive {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/redandblackshoe.jpg);
+  margin-bottom: 20px;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .leftone .shoespicsfive .button-view {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  display: none;
+}
+.containerfour .leftone .shoespicsfive .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicsfive .button-holder .button {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .leftone .shoespicsfive .button-holder .buttonone {
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.containerfour .leftone .shoespicsfive:hover .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerfour .leftone .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+@media screen and (max-width: 960px) {
+  .containerthree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerthree .leftone {
+    width: 50%;
+  }
+  .containerthree .leftone .shoespicsten .button-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerthree .leftone .button-holder {
+    width: 300px;
+  }
+  .containerthree .leftone .button-holder .buttonone {
+    width: 128px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .containerfour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerfour .leftone {
+    width: 50%;
+  }
+  .containerfour .leftone .shoespicsfive .button-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerfour .leftone .button-holder {
+    width: 300px;
+  }
+  .containerfour .leftone .button-holder .buttonone {
+    width: 128px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .browsecontainergroupfive {
+    padding-top: 840px;
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.backgroundcolorgallery {
+  background-color: bisque;
+  width: 100%;
+  height: 1800px;
+}
+
+@media screen and (max-width: 960px) {
+  .backgroundcolorgallery {
+    height: 6300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

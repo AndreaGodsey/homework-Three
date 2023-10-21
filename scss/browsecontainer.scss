@@ -1,0 +1,245 @@
+.browsecontainer{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    flex-direction: row;
+    width: 93%;
+    padding-top: 50px;
+    padding-left: 15%;
+    height: 320px;
+    
+
+        }
+
+        .containerthree{
+            width: 50%;
+            max-width: 960px;
+            display: flex;
+            .leftone{
+                .shoespicssix{
+                margin-top: 70px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 200px;
+                height: 200px;
+                background-image: url(../images/blackboots.jpg);
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .button-view{
+                    background-color: orangered;
+                            border-radius: 30px;
+                            cursor: pointer;
+                            width: 128px;
+                            height: 42px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 5px;
+                            display: none;
+                    
+                
+                }
+                }
+
+
+                .shoespicssix:hover .button-view{
+                    display: flex;
+                }
+
+                .button-holder{
+                    display: flex;
+                    .button{
+                        background-color: orangered;
+                            border-radius: 30px;
+                            cursor: pointer;
+                            width: 128px;
+                            height: 42px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                    }
+
+                    .buttonone{
+                        background-color: orangered;
+                        border-radius: 30px;
+                        cursor: pointer;
+                        width: 128px;
+                        height: 42px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+             }
+            }
+        
+            .rightone{
+                width: 150px;
+                height: 200px;
+                margin-top: 70px;
+               .titleofpara{
+                margin-right: 10px;
+                font-size: 30px;
+                width: 5%;
+                font-family: Cabin-Regular;
+                color: darkcyan;
+               }
+               .paragraphinfo{
+                margin-right: 10px;
+                font-size: 22px;
+                width: 15%;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: darkcyan;
+               }
+            }
+
+            .button-holder .buttonone {
+                margin-left: 10px;
+            }
+
+        .containerfour{
+            width: 50%;
+            max-width: 960px;
+            display: flex;
+            .leftone{
+                .shoespicsone{
+                    margin-top: 70px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 200px;
+                    height: 200px;
+                    background-image: url(../images/beigehighheels.jpg);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 20px;
+
+                    .button-view{
+                        background-color: orangered;
+                            border-radius: 30px;
+                            cursor: pointer;
+                            width: 128px;
+                            height: 42px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 5px;
+                            display: none;
+                    
+                    }
+                    }
+                    
+    
+                    .button-holder{
+                        display: flex;
+                        .button{
+                            background-color: orangered;
+                            border-radius: 30px;
+                            cursor: pointer;
+                            width: 128px;
+                            height: 42px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+    
+                        .buttonone{
+                            background-color: orangered;
+                            border-radius: 30px;
+                            cursor: pointer;
+                            width: 128px;
+                            height: 42px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+            
+            
+                    .shoespicsone:hover .button-view{
+                        display: flex;
+                    }
+            
+            
+                }
+        
+            .rightone{
+                .titleofpara{
+                padding-left: 10px;
+                font-size: 30px;
+                width: 5%;
+                font-family: Cabin-Regular;
+                color: darkcyan;
+                   }
+                   .paragraphinfo{
+                    padding-left: 10px;
+                font-size: 22px;
+                width: 15%;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: darkcyan;
+                   }
+            }
+        }
+    
+    
+
+        @media screen and (max-width: 960px) {
+            .containerthree{
+                flex-direction: column;
+                .leftone{
+                    width: 50%;
+                    .shoespicssix .button-view{
+                        display: flex;
+                    }
+                   
+                    .button-holder{
+                        width: 300px;
+                        .button{
+                           
+                        }
+                        .buttonone{
+                            width: 128px;
+                        }
+                 
+            
+                }
+            }
+          }
+        }
+
+      @media screen and (max-width: 960px) {
+        .containerfour{
+            flex-direction: column;
+            .leftone{
+                width: 50%;
+                .shoespicsone .button-view{
+                    display: flex;
+                }
+            .button-holder{
+                width: 300px;
+                .button{
+                   
+                }
+                .buttonone{
+                    width: 128px;
+                }
+            }
+             
+        
+            }
+        }
+      }
+
+
+      @media screen and (max-width: 960px) {
+        .browsecontainer {
+            padding-top: 100px;
+            height: 1000px;
+            flex-direction: column;
+        }
+      }
