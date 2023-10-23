@@ -11,4 +11,10 @@ export function changePageContent(pageID)
             $("#app").html(data);
         });
     }
+
+var button = document.body.querySelector(".button");
+
+button.addEventListener("click", function(){
+    console.log("You clicked this button")});
+
     }

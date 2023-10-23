@@ -22,6 +22,10 @@ function changeRoute() {
 }
 }
 
+
+
+
+
 function initURLListeners(){
     $(window).on("hashchange", changeRoute);
     changeRoute();
